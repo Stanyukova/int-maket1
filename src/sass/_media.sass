@@ -1,0 +1,80 @@
+@media (max-width: 1099px)
+    .main__cards-cards
+        gap: 10px
+    .subscription-box
+        width: 360px
+        gap: 0px
+
+    .main__cards-promo
+        justify-content: space-evenly
+    .message-pic
+        svg
+            width: 30px
+@media (max-width: 768px)
+    .header__bottom
+        font-size: 12px
+        padding: 5px 10px
+    .header__contacts-call
+        justify-content: center
+        padding: 10px
+    .contacts-number
+        font-size: 12px
+    .header__contacts
+        display: flex
+        flex-wrap: wrap
+        padding: 20px 0
+        flex-direction: column
+        align-items: center
+    .main__cards-special
+        gap: 10px
+        justify-content: center
+    .main__cards-cards
+        justify-content: center
+        gap: 10px
+
+    .footer__top
+        justify-content: center
+        font-size: 12px
+        gap: 10px
+    .message-pic
+        display: none
+    .main__cards-promo
+        justify-content: center
+    .footer-bottom
+        justify-content: center
+        gap: 10px
+    footer
+        margin-top: 25px
+
+    #menu-checkbox
+        position: absolute
+        clip: rect(1px, 1px, 1px, 1px)
+    .main-menu
+        position: absolute
+        clip: rect(1px, 1px, 1px, 1px)
+        padding: 0
+        margin: 0
+        li
+            font-size: 1em
+            display: block
+            width: 100%
+        a
+            display: block
+            color: lightslategray
+            padding: .5em
+        a:hover
+            text-decoration: underline
+    .toggle-button
+        text-align: center
+        display: block
+        cursor: pointer
+        background-color: #333
+        color: #fff
+    .toggle-button:after
+        content: attr(data-open)
+        display: block
+        padding: 10px 30px
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu
+        position: static
+    #menu-checkbox:checked + nav[role="navigation"] :after
+        content: attr(data-close)
